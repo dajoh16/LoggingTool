@@ -48,7 +48,7 @@
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="reviewExistingPane" layoutY="40.0" prefHeight="367.0" prefWidth="600.0">
+      <AnchorPane fx:id="reviewExistingPane" layoutY="40.0" prefHeight="367.0" prefWidth="600.0" visible="false">
          <children>
             <ListView fx:id="tryListView" layoutX="23.0" layoutY="38.0" prefHeight="306.0" prefWidth="139.0" />
             <TextArea fx:id="tryDescTxtArea" layoutX="359.0" layoutY="122.0" prefHeight="225.0" prefWidth="213.0" />
@@ -85,7 +85,7 @@
             <Label layoutX="470.0" layoutY="6.0" text="Current Raid Group" />
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="reviewExistingChooseLogPane" layoutY="40.0" prefHeight="367.0" prefWidth="600.0" visible="false">
+      <AnchorPane fx:id="reviewExistingChooseLogPane" layoutY="40.0" prefHeight="367.0" prefWidth="600.0">
          <children>
             <Button fx:id="reviewSelectedLogBtn" layoutX="354.0" layoutY="164.0" mnemonicParsing="false" onAction="#handleSelectLogBtn" prefHeight="40.0" prefWidth="130.0" text="Review selected log" />
             <Label layoutX="92.0" layoutY="1.0" text="Pick a log">
