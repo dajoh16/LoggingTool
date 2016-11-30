@@ -5,10 +5,41 @@
  */
 package backend;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+
 /**
  *
  * @author Daniel Johansen
  */
 public class Log {
+    private Raid raid;
+    private ObservableList<RaidEncounter> raidEncounters;
     
+    public Log(Raid raid, ObservableList<RaidEncounter> raidEncounters){
+        this.raid = raid;
+    }
+    public Log(Raid raid){
+        this.raid = raid;
+        this.raidEncounters = FXCollections.observableArrayList();
+    }
+
+    /**
+     * @return the raid
+     */
+    public Raid getRaid() {
+        return raid;
+    }
+
+    /**
+     * @return the raidEncounters
+     */
+    public ObservableList<RaidEncounter> getRaidEncounters() {
+        return raidEncounters;
+    }
+    
+    public void addRaidEncounter(RaidEncounter raidEncounter){
+        this.raidEncounters.add(raidEncounter);
+    }
+            
 }
