@@ -5,6 +5,7 @@
  */
 package backend;
 
+import java.time.LocalDateTime;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
@@ -15,9 +16,11 @@ import javafx.collections.ObservableList;
 public class Log {
     private Raid raid;
     private ObservableList<RaidEncounter> raidEncounters;
+    private LocalDateTime date;
     
     public Log(Raid raid, ObservableList<RaidEncounter> raidEncounters){
         this.raid = raid;
+        date = LocalDateTime.now();
     }
     public Log(Raid raid){
         this.raid = raid;
