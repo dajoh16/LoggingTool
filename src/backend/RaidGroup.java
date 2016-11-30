@@ -36,4 +36,12 @@ public class RaidGroup {
     public int getRaidGroupSize() {
         return raidGroupSize;
     }
+    
+    /**
+     * Adds a raider to the raidgroup
+     * @param raider 
+     */
+    public void addRaider(Raider raider){
+        raidGroup.add(raider);
+    }
 }
