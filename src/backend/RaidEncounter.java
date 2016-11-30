@@ -12,11 +12,13 @@ package backend;
 public class RaidEncounter {
     
     private RaidGroup raidGroup;
-    private Difficulty diff; 
+    private Difficulty diff;
+    private static int tryNumber = 1;
     
-    public RaidEncounter(RaidGroup raidGroup, Difficulty diff){
+    public RaidEncounter(RaidGroup raidGroup, Difficulty diff, String description){
         this.raidGroup = raidGroup;
         this.diff = diff;
+        
     }
 
     /**
