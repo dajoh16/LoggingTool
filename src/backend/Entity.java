@@ -9,6 +9,6 @@ package backend;
  *
  * @author frede
  */
-public class Entity {
-    
+public abstract class Entity {
+    protected String name;
 }
