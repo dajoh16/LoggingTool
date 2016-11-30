@@ -113,6 +113,14 @@ public class LoggingToolFXMLController implements Initializable {
         if(event.getSource().equals(createNewBtn)){
             startMenuPane.setVisible(false);
             createNewPane.setVisible(true);
+        } else if(event.getSource().equals(reviewExistingBtn)){
+            startMenuPane.setVisible(false);
+            reviewExistingChooseLogPane.setVisible(true);
+        } else if(event.getSource().equals(settingsBtn)){
+            startMenuPane.setVisible(false);
+            settingsPane.setVisible(true);
+        } else if(event.getSource().equals(quitBtn)){
+            System.out.println("Nothing");
         }
         
 
