@@ -12,6 +12,10 @@ package backend;
 public class Raider {
     
     private String name;
+    
+    public Raider(String name){
+        this.name = name;
+    }
 
     /**
      * @return the name

@@ -5,10 +5,36 @@
  */
 package backend;
 
+
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+
 /**
  *
  * @author Daniel Johansen
  */
 public class RaidGroup {
+    private ObservableList<Raider> raidGroup;
+    private int raidGroupSize;
     
+    
+    public RaidGroup(int raidGroupSize){
+        this.raidGroupSize = raidGroupSize;
+        raidGroup = FXCollections.observableArrayList();
+                
+    }
+
+    /**
+     * @return the raidGroup
+     */
+    public ObservableList<Raider> getRaidGroup() {
+        return raidGroup;
+    }
+
+    /**
+     * @return the raidGroupSize
+     */
+    public int getRaidGroupSize() {
+        return raidGroupSize;
+    }
 }

@@ -5,10 +5,14 @@
  */
 package backend;
 
+import javafx.collections.ObservableList;
+
 /**
  *
  * @author Danieln Johansen
  */
-public interface LoadFile {
+public interface LoadFile<T> {
 	
+    public ObservableList<T> loadObservableList(String fileToRead);
+    
 }
