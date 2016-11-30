@@ -48,21 +48,27 @@
             </Label>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="reviewExistingPane" layoutY="40.0" prefHeight="367.0" prefWidth="600.0" visible="false">
+      <AnchorPane fx:id="reviewExistingPane" layoutY="40.0" prefHeight="367.0" prefWidth="600.0">
          <children>
-            <ListView fx:id="tryListView" layoutX="14.0" layoutY="41.0" prefHeight="306.0" prefWidth="213.0" />
-            <TextArea fx:id="tryDescTxtArea" layoutX="244.0" layoutY="191.0" prefHeight="156.0" prefWidth="328.0" />
+            <ListView fx:id="tryListView" layoutX="23.0" layoutY="38.0" prefHeight="306.0" prefWidth="139.0" />
+            <TextArea fx:id="tryDescTxtArea" layoutX="359.0" layoutY="122.0" prefHeight="225.0" prefWidth="213.0" />
             <ChoiceBox fx:id="fightChoiceBox" layoutX="422.0" layoutY="37.0" prefWidth="150.0" />
-            <Label layoutX="358.0" layoutY="41.0" text="Pick fight" />
-            <Label layoutX="92.0" layoutY="13.0" text="Pick try">
+            <Label layoutX="422.0" layoutY="18.0" text="Pick fight" />
+            <Label layoutX="64.0" layoutY="13.0" text="Pick try">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label layoutX="243.0" layoutY="172.0" text="Description of try" />
+            <Label layoutX="359.0" layoutY="105.0" text="Description of try" />
+            <ListView fx:id="reviewRaidGrpListView" layoutX="170.0" layoutY="38.0" prefHeight="306.0" prefWidth="139.0" />
+            <Label layoutX="195.0" layoutY="13.0" text="Raid Group">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="updateNewPane" layoutY="40.0" prefHeight="367.0" prefWidth="600.0">
+      <AnchorPane fx:id="updateNewPane" layoutY="40.0" prefHeight="367.0" prefWidth="600.0" visible="false">
          <children>
             <TextArea fx:id="newTryDescrTxtArea" layoutX="24.0" layoutY="207.0" prefHeight="148.0" prefWidth="396.0" text="Description of the try" />
             <ChoiceBox fx:id="newBossChoiceBox" layoutX="24.0" layoutY="23.0" prefHeight="25.0" prefWidth="170.0" />
@@ -87,7 +93,12 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <ListView fx:id="logListView" layoutX="24.0" layoutY="31.0" prefHeight="306.0" prefWidth="213.0" />
+            <TableView fx:id="reviewLogTableView" layoutX="20.0" layoutY="35.0" prefHeight="298.0" prefWidth="221.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TableView>
          </children>
       </AnchorPane>
       <AnchorPane fx:id="settingsPane" layoutY="40.0" prefHeight="361.0" prefWidth="600.0" visible="false">

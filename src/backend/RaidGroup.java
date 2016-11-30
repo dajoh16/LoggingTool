@@ -20,8 +20,7 @@ public class RaidGroup {
     
     public RaidGroup(int raidGroupSize){
         this.raidGroupSize = raidGroupSize;
-        raidGroup = FXCollections.observableArrayList();
-                
+        raidGroup = FXCollections.observableArrayList();  
     }
 
     /**
