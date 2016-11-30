@@ -110,12 +110,12 @@ public class LoggingToolFXMLController implements Initializable {
 
     @FXML
     private void handleMainMenuBtns(ActionEvent event) {
-//        switch(){
-//            case createNewBtn:
-//                break;
-//            default:
-//                break;
-//        }
+        if(event.getSource().equals(createNewBtn)){
+            startMenuPane.setVisible(false);
+            createNewPane.setVisible(true);
+        }
+        
+
     }
 
     @FXML
