@@ -5,17 +5,19 @@
  */
 package backend;
 
+import java.util.Scanner;
 import javafx.collections.ObservableList;
 
 /**
  *
  * @author frede
  */
-public class LoadRaid implements LoadFile {
+public class LoadRaid implements LoadFile<Raid> {
 
     @Override
-    public ObservableList loadObservableList(String fileToRead) {
+    public ObservableList<Raid> loadObservableList(String fileToRead) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+
+
 }

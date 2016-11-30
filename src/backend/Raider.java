@@ -9,31 +9,9 @@ package backend;
  *
  * @author Daniel Johansen
  */
-public class Raider {
-    
-    private String name;
+public class Raider extends Entity {
     
     public Raider(String name){
-        this.name = name;
-    }
-
-    /**
-     * @return the name
-     */
-    public String getName() {
-        return name;
-    }
-
-    /**
-     * @param name the name to set
-     */
-    public void setName(String name) {
-        this.name = name;
-    }
-    
-    @Override
-    public String toString(){
-        return this.name;
-    }    
-     
+        super.name=name;
+    } 
 }

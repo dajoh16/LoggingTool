@@ -7,11 +7,8 @@ package backend;
 
 /**
  *
- * @author Daniel Johansen
+ * @author frede
  */
-public class RaidBoss extends Entity {
+public class Entity {
     
-    RaidBoss(String name){
-        super.name=name;
-    }
 }
