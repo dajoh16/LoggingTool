@@ -5,19 +5,33 @@
  */
 package backend;
 
+import javafx.collections.ObservableList;
+
 /**
  *
  * @author Daniel Johansen
  */
-public enum Raid {
-    EN("Emerald Nightmare"), TOV("Trial of Valor");
+public class Raid {
     
-    String raidTypeString;
-    private Raid(String raidTypeString){
-      this.raidTypeString = raidTypeString;
+    private final String name;
+    private final ObservableList<RaidBoss> bossList;
+       
+    public Raid(String name,ObservableList<RaidBoss> bossList ){
+        this.name = name;
+        this.bossList = bossList;
     }
-    @Override
-    public String toString(){
-        return raidTypeString;
+
+    /**
+     * @return the name
+     */
+    public String getName() {
+        return name;
+    }
+
+    /**
+     * @return the bossList
+     */
+    public ObservableList<RaidBoss> getBossList() {
+        return bossList;
     }
 }
