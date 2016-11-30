@@ -9,6 +9,6 @@ package backend;
  *
  * @author Danieln Johansen
  */
-public class WriteFile {
+public interface WriteFile {
 	
 }

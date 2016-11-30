@@ -9,6 +9,6 @@ package backend;
  *
  * @author Danieln Johansen
  */
-public class LoadFile {
+public interface LoadFile {
 	
 }

@@ -9,6 +9,6 @@ package backend;
  *
  * @author Daniel Johansen
  */
-public class RaidType {
+public enum RaidType {
     
 }

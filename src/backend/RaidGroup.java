@@ -9,6 +9,6 @@ package backend;
  *
  * @author Daniel Johansen
  */
-public enum RaidBoss {
+public class RaidGroup {
     
 }
