@@ -9,6 +9,15 @@ package backend;
  *
  * @author Daniel Johansen
  */
-public class Raid {
+public enum Raid {
+    EN("Emerald Nightmare"), TOV("Trial of Valor");
     
+    String raidTypeString;
+    private Raid(String raidTypeString){
+      this.raidTypeString = raidTypeString;
+    }
+    @Override
+    public String toString(){
+        return raidTypeString;
+    }
 }

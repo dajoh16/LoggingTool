@@ -13,9 +13,9 @@ public class RaidEncounter {
     
     private RaidGroup raidGroup;
     private Difficulty diff;
-    private static int tryNumber = 1;
+    public static int tryNumber = 1;
     
-    public RaidEncounter(RaidGroup raidGroup, Difficulty diff, String description){
+    public RaidEncounter(RaidGroup raidGroup, Difficulty diff, String description, RaidBoss raidBoss){
         this.raidGroup = raidGroup;
         this.diff = diff;
         
