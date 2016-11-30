@@ -24,6 +24,7 @@ public class LoggingTool extends Application {
 		Scene scene = new Scene(root);
 		
 		stage.setScene(scene);
+                stage.setTitle("Logging Tool");
 		stage.show();
 	}
 

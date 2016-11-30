@@ -101,10 +101,21 @@ public class LoggingToolFXMLController implements Initializable {
 
     @FXML
     private void handleHomeBtn(ActionEvent event) {
+        startMenuPane.setVisible(true);
+        createNewPane.setVisible(false);
+        reviewExistingPane.setVisible(false);
+        updateNewPane.setVisible(false);
+        reviewExistingChooseLogPane.setVisible(false);
     }
 
     @FXML
     private void handleMainMenuBtns(ActionEvent event) {
+//        switch(){
+//            case createNewBtn:
+//                break;
+//            default:
+//                break;
+//        }
     }
 
     @FXML
